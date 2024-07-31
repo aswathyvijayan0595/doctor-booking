@@ -1,5 +1,6 @@
 const Doctor = require('../db/models/doctor-schema');
 const bcrypt = require('bcrypt');
+var jwt = require('jsonwebtoken');
 
 module.exports.signupDoctor = async (req, res) => {
   const { body } = req;
@@ -21,4 +22,36 @@ module.exports.signupDoctor = async (req, res) => {
   res.status(201).json({ message: 'Account Created', data: newDoctor });
 };
 
-module.exports.loginDoctor = () => {};
+module.exports.loginDoctor = async (req, res) => {
+  const { email, password } = req.body;
+  const doctor = await Doctor.findOne({
+    email: email,
+  });
+  if (!doctor) {
+    return res.status(403).json({ message: 'Email or Password incorrect' });
+  }
+  const isMatching = await bcrypt.compare(password, doctor.password);
+  if (!isMatching) {
+    return res.status(403).json({ message: 'Email or Password incorrect' });
+  }
+  //const key = 'fghtyuiklsnbysrr6353467455hsydtsdftr53336gyeuiueie36373y3hojks7';
+  //const token = jwt.sign({ id: doctor._id }, key, { expiresIn: '7d' });
+
+  const token = jwt.sign(
+    { id: doctor._id, role: 'DOCTOR' },
+    process.env.SECRET_KEY,
+    {
+      expiresIn: '7d',
+    }
+  );
+
+  res
+    .status(200)
+    .json({ message: 'You are logged in', token: token, id: doctor._id });
+};
+
+module.exports.getDoctorById = async (req, res) => {
+  const { id } = req.params;
+  const doctor = await Doctor.findById(id);
+  res.status(200).json(doctor);
+};

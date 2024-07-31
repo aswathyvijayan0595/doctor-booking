@@ -22,7 +22,7 @@ const doctorSchema = mongoose.Schema({
   email: {
     type: String,
     trim: true,
-    require: true,
+    required: true,
   },
   password: {
     type: String,
