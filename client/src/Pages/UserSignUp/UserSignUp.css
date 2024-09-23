@@ -1,11 +1,11 @@
 .signup_main {
-  /* background-color: blueviolet; */
+  background-color: #591b93;
   height: 100vh;
   position: relative;
   /* background-image: url("../../assets/patient_bann2.jpg"); */
   /* background-position: 100% 100%;
   object-fit: cover; */
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 .user_signup_form {
   background-color: #f0f0f0;
@@ -38,14 +38,14 @@
 }
 
 .user_signup_btn .ant-btn {
-  background-color: #067928;
+  background-color: #591b93;
   color: white;
   width: 100%;
   border: none;
   padding: 20px;
 }
 .user_signup_btn .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
-  background-color: rgb(2, 46, 2);
+  background-color: #9251cf;
   color: white;
 }
 
