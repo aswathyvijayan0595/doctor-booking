@@ -1,0 +1,66 @@
+.sidebar {
+  width: 18%;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Purple to blue gradient */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Enable scrolling within the sidebar if necessary */
+}
+
+.sidebar .user_card {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for user card */
+  border-radius: 8px; /* Rounded corners */
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  color: #333; /* Darker text color for contrast */
+}
+
+.sidebar .user_card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular profile picture */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased spacing between menu items */
+  margin-top: 40px; /* Space above the menu */
+}
+
+.menu p {
+  padding: 12px; /* Larger padding for better touch area */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.menu p:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  color: #fff; /* Text color on hover */
+  font-weight: 600;
+}
+
+.sidebar .menu .link {
+  color: #fff; /* Default text color */
+  text-decoration: none;
+  display: block; /* Block display for entire clickable area */
+}
+
+.sidebar .menu .link.active {
+  background-color: rgba(255, 255, 255, 0.3); /* Active link background */
+  color: #fff; /* Active link text color */
+  font-weight: 600;
+  border-radius: 5px; /* Rounded corners for active link */
+}
+
+.links {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: inherit; /* Inherit text decoration from parent */
+}

@@ -1,0 +1,69 @@
+.signUpMain {
+  height: 100vh;
+  position: relative;
+  background-image: url('../../assets/bann1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.doc_signup_form {
+  position: absolute; /* Position relative to the .container */
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  box-shadow: 15px 15px 15px 15px rgb(2 9 20 / 10%);
+  width: 500px;
+  margin: auto;
+}
+.name {
+  display: flex;
+  gap: 1rem;
+}
+.doc_signup_form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.inputClass {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+/* .ant-input-password-icon {
+  right: 10px;
+} */
+.passIcons {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+.signup_btn {
+  margin-top: 5px;
+  /* margin-bottom: 10px; */
+}
+.signup_btn .ant-btn {
+  background-color: #067928;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 20px;
+}
+.signup_btn .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: rgb(2, 46, 2);
+  color: white;
+}
+.uploadImage
+{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.pos_qual
+{
+  display: flex;
+  gap: 1rem;
+}

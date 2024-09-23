@@ -1,8 +1,12 @@
-const express = require('express');
-const router = express.Router();
-const controllers = require('../controllers/hospital-controller');
-const upload = require('../middlewares/upload');
-router.get('/', controllers.getHospitals);
-router.post('/', upload.single('image'), controllers.postHospitals);
+const express= require('express');
+const controllers=require("../controllers/hospital-controller")
+const upload=require("../middlewares/upload")
 
-module.exports = router;
+const router= express.Router();
+
+router.get('/',controllers.getHospitals)
+// router.get('/:departmentId', controllers.getHospitalsByDepartmentId);
+router.post('/',upload.single('image'),controllers.postHospitals)
+
+
+module.exports= router;

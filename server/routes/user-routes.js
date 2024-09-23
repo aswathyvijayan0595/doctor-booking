@@ -1,6 +1,16 @@
 const express = require('express');
-const router = express.Router();
 const controllers = require('../controllers/user-controller');
+const checkToken = require('../middlewares/checkToken');
+// const upload = require('../middlewares/upload');
 
-router.post('/signup', controllers.signupUser);
+const router = express.Router();
+
+router.post('/signup', controllers.signupUsers);
+router.post('/login', controllers.loginUsers);
+router.get(
+  '/getprofile/:userId',
+  checkToken('USERS'),
+  controllers.getUserProfile
+);
+
 module.exports = router;

@@ -1,4 +1,118 @@
-.doc-login-form {
-  width: 300px;
-  margin: 100px auto;
+
+.loginMain_page {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #5c70d8, #7426b4); /* Darker purple to blue gradient */
+}
+
+.doc_login_form {
+  background-color: rgb(100 211 227 / 80%); /* Slightly less transparency for better contrast */
+  padding: 40px;
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  width: 400px;
+  max-width: 90%; /* Responsive width */
+}
+
+.doc_login_form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Darker text for contrast */
+  font-size: 1.8em; /* Larger font size */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.login_btnDiv {
+  margin-top: 20px; /* Increased spacing */
+  margin-bottom: 10px;
+}
+
+.login_btnDiv .ant-btn {
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Purple to blue gradient */
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 30px; /* Fully rounded button */
+  font-size: 1em; /* Standard font size */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.login_btnDiv .ant-btn:hover {
+  background-color: black; /* Change to black on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.inputClasses {
+  margin-bottom: 15px; /* Increased spacing */
+  width: 100%;
+  padding: 12px; /* Slightly larger padding */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.inputClasses:focus {
+  border-color: #4caf50; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle shadow */
+}
+
+.check_rem {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.rem_frgt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frgtPass p {
+  color: #1677FF;
+  cursor: pointer; /* Pointer cursor for better UX */
+}
+
+.doc_login_form p {
+  text-align: center;
+}
+
+.signup-text {
+  color: #4caf50; /* Match link color with button */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-text:hover {
+  text-decoration: none; /* Change on hover */
+}
+
+.rem_frgt p {
+  font-size: 12px;
+}
+
+.passIcon {
+  position: absolute;
+  top: 52%;
+  right: 12%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .doc_login_form {
+    width: 90%; /* Take up more space on small screens */
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+
+  .login_btnDiv .ant-btn {
+    padding: 10px; /* Reduce button padding on smaller screens */
+  }
+
+  .doc_login_form h1 {
+    font-size: 1.5em; /* Slightly smaller font size */
+  }
 }

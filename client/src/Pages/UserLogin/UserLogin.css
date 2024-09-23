@@ -1,0 +1,97 @@
+.userLogin_main {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(75, 0, 130, 0.9), rgba(128, 0, 128, 0.9)); /* Dark purple gradient */
+  background-size: cover; /* Cover the entire viewport */
+}
+
+
+.user_login_form {
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 30px;
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  width: 400px;
+}
+
+.user_login_form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3B2C67; /* Use a color that complements the background */
+}
+
+.user_login_btnDiv {
+  margin-top: 15px; /* Increased margin for spacing */
+}
+
+.user_login_btnDiv .ant-btn {
+  background-color: #3B2C67;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 15px; /* Reduced padding for a sleeker look */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.user_login_btnDiv .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #5F4E94;
+  color: white;
+}
+
+.input_classes {
+  margin-bottom: 15px; /* Increased spacing between inputs */
+  width: 100%;
+  padding: 12px; /* More padding for comfort */
+  border: 1px solid #ccc; /* Add border for input fields */
+  border-radius: 8px; /* Rounded corners for inputs */
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.input_classes:focus {
+  border-color: #3B2C67; /* Change border color on focus */
+}
+
+.check_rem {
+  display: flex;
+  gap: 10px;
+  align-items: center; /* Center align items */
+}
+
+.rem_frgt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frgtPass p {
+  color: #1677ff;
+  cursor: pointer; /* Change cursor for clarity */
+}
+
+.user_login_form p {
+  text-align: center;
+}
+
+.signup-text {
+  color: #1677ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-text:hover {
+  text-decoration: none; /* Change on hover for a subtle effect */
+}
+
+.rem_frgt p {
+  font-size: 12px;
+}
+
+.passIcon {
+  position: absolute;
+  top: 52%;
+  right: 12%;
+  cursor: pointer; /* Add pointer cursor for clarity */
+}

@@ -1,22 +1,20 @@
-const mongoose = require('mongoose');
+const mongoose=require('mongoose');
 
-const departmentSchema = mongoose.Schema(
-  {
-    name: {
-      type: String,
-      trim: true,
-      required: true,
-    },
-    image: {
-      type: String,
-      trim: true,
-      requires: true,
-    },
-  },
-  {
-    timestamps: true,
-  }
-);
+const departmentSchema=mongoose.Schema({
+name: {
+    type:String,
+    required:true,
+    trim:true
+},
+image:{
+    type:String,
+    required:true,
+    trim:true
+},
+},
+{
+    timestamps:true
+})
 
-const Department = mongoose.model('Department', departmentSchema);
-module.exports = Department;
+const Department=mongoose.model('Department',departmentSchema);
+module.exports=Department;

@@ -1,0 +1,56 @@
+.signup_main {
+  /* background-color: blueviolet; */
+  height: 100vh;
+  position: relative;
+  /* background-image: url("../../assets/patient_bann2.jpg"); */
+  /* background-position: 100% 100%;
+  object-fit: cover; */
+  background-color: cadetblue;
+}
+.user_signup_form {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 15px 15px 15px 15px rgb(2 9 20 / 10%);
+  width: 500px;
+  margin: auto;
+  position: absolute; /* Position relative to the .container */
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+}
+.user_signup_form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.name {
+  display: flex;
+  gap: 1rem;
+}
+.input_Class {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+.user_signup_btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.user_signup_btn .ant-btn {
+  background-color: #067928;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 20px;
+}
+.user_signup_btn .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: rgb(2, 46, 2);
+  color: white;
+}
+
+.passIcons {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}

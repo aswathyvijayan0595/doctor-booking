@@ -1,1 +1,76 @@
+/* .home
+{
+    display: flex;
+   
+}
+.home .home-container
+{
+    padding: 30px;
+    flex: 1;
 
+} */
+
+.home-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-image {
+    width: 300px; /* Increased size */
+    height: auto; /* Increased size */
+    border-radius: 8px; /* Slightly rounded corners */
+    margin-right: 15px;
+    object-fit: cover; /* Keeps image proportions */
+  }
+  
+  .doctor-info h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .qualification {
+    margin: 5px 0;
+    color: #777;
+  }
+  
+  .edit-button {
+    margin-top: 10px;
+    background-color: #c06cb1; /* Green color */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #c06cb1 /* Darker green on hover */
+  }
+  
+  .download-button {
+    padding: 10px 20px;
+    background-color: #6a82fb; /* Purple background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #5e35b1; /* Darker purple on hover */
+  }
+  
